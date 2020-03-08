@@ -1,7 +1,7 @@
 import pyautogui, Pmw, sys, os
 from tkinter import *
 win=Tk()
-win.geometry("400x650")
+win.geometry("400x650+740+272")
 filename = "/Users/charlesetienne/git/screenCalipers/object_locations.txt"
 xm=1
 ym=0
