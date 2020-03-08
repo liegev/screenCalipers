@@ -1,7 +1,5 @@
-from tkinter import *
-import Pmw, sys
-filename = "/Users/charlesetienne/git/screenCalipers/object_locations.txt"
-root = Tk()            
+
+          
 top = Frame(root); top.pack(side='top')
 text = Pmw.ScrolledText(top,
        borderframe=5, 
