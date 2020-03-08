@@ -1,8 +1,12 @@
-import pyautogui, sys, math, os
+import pyautogui, sys, math, os, tkinter
+from tkinter import *
 
 state = 'a'
 mode = 'f'
 null = 1
+
+window = Tk()
+window.title("test")
 
 ## This is a comment - define your functions here....
 
