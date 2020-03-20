@@ -1,7 +1,7 @@
 import pyautogui, Pmw, sys, os
 from tkinter import *
 win=Tk()
-win.geometry("400x650+740+272")
+win.geometry("400x650+1490+500")
 filename = "/Users/charlesetienne/git/screenCalipers/object_locations.txt"
 xm=1
 ym=0
@@ -67,19 +67,19 @@ def xy(event):
     custom.insert('end', xy_cusdata)
 
 def deletefile(event):
-    os.remove("object_locations.txt")
-    f=open("object_locations.txt", "a+")
+    os.remove(filename)
+    f=open(filename, "a+")
     
 def spacebar(event):
-    f=open("object_locations.txt", "a+")
+    f=open(filename, "a+")
     f.write("%s    \r\n\r\n" % (xy_cusdata))
 
 def bigline(event):
-    f=open("object_locations.txt", "a+")
+    f=open(filename, "a+")
     f.write("=" * 40 + "\r\n\r\n")
 
 def refresh(event):
-    textFile.delete("1.0", "end")
+    textFile.delete("1.0", "end") 
     textFile.insert('end', open(filename,'r').read())
 
 win.bind("<space>", spacebar)
